@@ -20,6 +20,7 @@ namespace osu.Game.Configuration
     [ExcludeFromDynamicCompile]
     public class OsuConfigManager : IniConfigManager<OsuSetting>
     {
+        protected override string Filename => "keesu.ini";
         protected override void InitialiseDefaults()
         {
             // UI/selection defaults
